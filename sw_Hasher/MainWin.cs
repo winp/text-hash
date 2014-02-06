@@ -30,11 +30,15 @@ namespace sw_Hasher
 		}
 		private void btnHelp_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Text", "Help - Hasher[8-bit]");
+			string msg = "This program calculates 8-bit XOR hash value of a given text.\n\n" +
+						"Subhajit Sahu\nNIT Rourkela";
+			MessageBox.Show(msg, "Help - Hasher[8-bit]");
 		}
 		private void txtHashText_TextChanged(object sender, EventArgs e)
 		{
-
+			int hashValue = GetHashValue(txtHashText.Text);
+			lblHashValueDec.Text = hashValue.ToString();
+			lblHashValueHex.Text = hashValue.ToString("x").ToUpper() + "h";
 		}
 	}
 }
