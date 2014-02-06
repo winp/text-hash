@@ -20,17 +20,26 @@ namespace sw_Hasher
 		// Finds 8-bit hash value of given text
 		private static int GetHashValue(string text)
 		{
-			byte hashValue = 0;
+			int msbValue, hashValue = 0;
 			byte[] textBytes = Encoding.ASCII.GetBytes(text);
 			foreach ( byte textByte in textBytes )
 			{
+				msbValue = (hashValue & 1) << 7;
+				hashValue = msbValue | (hashValue >> 1);
 				hashValue ^= textByte;
 			}
 			return hashValue;
 		}
 		private void btnHelp_Click(object sender, EventArgs e)
 		{
-			string msg = "This program calculates 8-bit XOR hash value of a given text.\n\n" +
+			string msg = "This program calculates 8-bit ROR+XOR hash value of a given text.\n\n" +
+						"Algorithm:\n" +
+						"hashValue = 0;\n" +
+						"foreach(byte textByte in textBytes)\n" +
+						"    hashValue = RotateRight8(hashValue);\n" +
+						"    hashValue = Xor8(hashValue, textByte);\n" +
+						"end foreach;\n" +
+						"return hashValue;\n\n" +
 						"Subhajit Sahu\nNIT Rourkela";
 			MessageBox.Show(msg, "Help - Hasher[8-bit]");
 		}

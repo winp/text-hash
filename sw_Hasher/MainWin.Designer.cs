@@ -113,7 +113,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "MainWin";
-			this.Text = "Hasher [8-bit]";
+			this.Text = "Hasher [8-bit] v0.2";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
