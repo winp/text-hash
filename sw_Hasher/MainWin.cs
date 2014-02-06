@@ -16,5 +16,25 @@ namespace sw_Hasher
 		{
 			InitializeComponent();
 		}
+
+		// Finds 8-bit hash value of given text
+		private static int GetHashValue(string text)
+		{
+			byte hashValue = 0;
+			byte[] textBytes = Encoding.ASCII.GetBytes(text);
+			foreach ( byte textByte in textBytes )
+			{
+				hashValue ^= textByte;
+			}
+			return hashValue;
+		}
+		private void btnHelp_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Text", "Help - Hasher[8-bit]");
+		}
+		private void txtHashText_TextChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

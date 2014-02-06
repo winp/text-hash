@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWin));
 			this.txtHashText = new System.Windows.Forms.TextBox();
 			this.lblHashText = new System.Windows.Forms.Label();
 			this.lblHashValue = new System.Windows.Forms.Label();
@@ -43,8 +44,9 @@
 			this.txtHashText.Multiline = true;
 			this.txtHashText.Name = "txtHashText";
 			this.txtHashText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.txtHashText.Size = new System.Drawing.Size(279, 204);
+			this.txtHashText.Size = new System.Drawing.Size(279, 202);
 			this.txtHashText.TabIndex = 0;
+			this.txtHashText.TextChanged += new System.EventHandler(this.txtHashText_TextChanged);
 			// 
 			// lblHashText
 			// 
@@ -95,12 +97,13 @@
 			this.btnHelp.TabIndex = 5;
 			this.btnHelp.Text = "?";
 			this.btnHelp.UseVisualStyleBackColor = true;
+			this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
 			// 
 			// MainWin
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(532, 269);
+			this.ClientSize = new System.Drawing.Size(532, 270);
 			this.Controls.Add(this.btnHelp);
 			this.Controls.Add(this.lblHashValueHex);
 			this.Controls.Add(this.lblHashValueDec);
@@ -108,6 +111,7 @@
 			this.Controls.Add(this.lblHashText);
 			this.Controls.Add(this.txtHashText);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "MainWin";
 			this.Text = "Hasher [8-bit]";
 			this.ResumeLayout(false);
