@@ -11,6 +11,6 @@ following issues that `XOR` hash suffers from:
 - does not depend on order of characters `hash(hello) = hash(loleh)`
 - for a simple text highest bit is never used `hash(<text>).bit(7) == 0`
 
-`XOR+ROR` solves these issues simple by rotating the bits by one bit
+`XOR+ROR` hash solves these issues simple by rotating the bits by one bit
 after each operation.
 
