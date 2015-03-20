@@ -19,15 +19,19 @@ after each operation.
 
 <img src="/assets/img/0.png"><br/>
 Open **cs-string-hash**. 
+<br/><br/>
 
 
 <img src="/assets/img/1.png"><br/>
 Start writing some text. Hash value is calculated as you type.
+<br/><br/>
 
 
 <img src="/assets/img/2.png"><br/>
 Notice how the hash value varies with each character.
+<br/><br/>
 
 
 <img src="/assets/img/3.png"><br/>
 Moving characters around changes the has value.
+<br/><br/>
