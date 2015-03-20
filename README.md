@@ -17,7 +17,7 @@ after each operation.
 
 ##demo
 
-<img src="/assets/img/0.png" width="60%"><br/>
+<img src="/assets/img/0.png"><br/>
 Open **cs-string-hash**. 
 
 
