@@ -18,6 +18,16 @@ after each operation.
 ##demo
 
 <img src="/assets/img/0.png" width="60%"><br/>
+Open **cs-string-hash**. 
+
+
 <img src="/assets/img/1.png" width="60%"><br/>
+Start writing some text. Hash value is calculated as you type.
+
+
 <img src="/assets/img/2.png" width="60%"><br/>
+Notice how the hash value varies with each character.
+
+
 <img src="/assets/img/3.png" width="60%"><br/>
+Moving characters around changes the has value.
