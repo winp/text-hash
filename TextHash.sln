@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sw_Hasher", "sw_Hasher\sw_Hasher.csproj", "{4B427B56-973D-4B12-9E8D-E56F9A8CEBC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextHash", "TextHash.csproj", "{4B427B56-973D-4B12-9E8D-E56F9A8CEBC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace sw_Hasher.Properties
+namespace TextHash.Properties
 {
 
 
